@@ -1,0 +1,15 @@
+--cpu Cortex-M3
+"..\obj\main.o"
+"..\obj\system_gd32f10x.o"
+"..\obj\startup_gd32f10x_md.o"
+"..\obj\gd32f10x_it.o"
+"..\obj\ustart.o"
+"..\obj\gd32f10x_gpio.o"
+"..\obj\gd32f10x_misc.o"
+"..\obj\gd32f10x_rcu.o"
+"..\obj\gd32f10x_usart.o"
+"..\obj\gd32f10x_dma.o"
+--strict --scatter "..\OBJ\BOOT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\BOOT.map" -o ..\OBJ\BOOT.axf
