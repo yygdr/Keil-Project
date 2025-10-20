@@ -7,7 +7,7 @@
 #include "gd32f10x.h"
 #define U0_Rx_SIZE 2048
 #define U0_RX_MAX 256
-#define NUM 256
+#define NUM 10
 typedef struct
 {
 	uint8_t *start;
@@ -23,5 +23,5 @@ typedef struct
 	UCB_URxBuffptr *URxDataEND;
 	
 }UCB_CB;
- 
+extern UCB_CB U0CB;
 #endif

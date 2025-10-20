@@ -2,7 +2,7 @@
 
 uint8_t U0_RX_BUFFER[U0_Rx_SIZE];
 
-
+UCB_CB U0CB;
 void Usart0_Init(uint32_t bandrate)
 {
 	rcu_periph_clock_enable(RCU_GPIOA);
@@ -56,7 +56,15 @@ void DMA_Init(void)
 	
 }
 	
- 
+ void U0Rx_PtrInit(void)
+ {
+	U0CB.URxDataIN = &U0CB.URxDataPtr[0];
+	U0CB.URxDataOUT = &U0CB.URxDataPtr[0];
+	U0CB.URxDataEND = &U0CB.URxDataPtr[NUM-1];
+	U0CB.URxDataIN ->start = U0_RX_BUFFER;
+	U0CB.URxCounter = 0;
+
+ }
 
 
 

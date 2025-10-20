@@ -32,6 +32,45 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 OF SUCH DAMAGE.
 */
 #include "gd32f10x_it.h"
+#include "usart.h"
+void USART0_IRQHandler(void)
+{
+    if(usart_interrupt_flag_get(USART0,USART_INT_FLAG_IDLE) == 1)
+    {
+        usart_flag_get(USART0,USART_INT_FLAG_IDLE);
+        usart_data_receive(USART0);
+        U0CB.URxCounter += (U0_RX_MAX+1)-dma_transfer_number_get(DMA0,DMA_CH4);
+        U0CB.URxDataIN ->end = &U0_RX_BUFFER[U0CB.URxcounter - 1];
+        U0CB.URxDataIN++;
+        if(U0CB.URxDataIN == U0CB.URxDataEND)
+        {
+            U0CB.URxDataIN = &U0CB.U0_RxDataPtr[0];
+
+        }
+        if(U0_Rx_SIZE - U0CB.URxCounter >= U0_RX_MAX)
+        {
+            U0CB.URxDataIN -> start = &U0_RX_BUFFER[U0CB.URxCounter];
+        }
+        else
+        {
+            U0CB.URxDataIN -> start = U0_RX_BUFFER;
+            U0CB.URxCounter = 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*!
     \brief      this function handles NMI exception
