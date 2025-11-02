@@ -24,4 +24,10 @@ typedef struct
 	
 }UCB_CB;
 extern UCB_CB U0CB;
+void Usart0_Init(uint32_t bandrate);
+void DMA_Init(void);
+void U0Rx_PtrInit(void);
+void u0_printf(char *format,...);
+extern uint8_t U0_RX_BUFFER[U0_Rx_SIZE];
+extern uint8_t U0_TX_BUFFER[U0_Rx_SIZE];
 #endif

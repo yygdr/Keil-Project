@@ -2,6 +2,8 @@
     "files.associations": {
         "gd32f10x_dma.h": "c",
         "gd32f10x_usart.h": "c",
-        "gd32f10x.h": "c"
+        "gd32f10x.h": "c",
+        "ustart.h": "c",
+        "gd32f10x_gpio.h": "c"
     }
 }

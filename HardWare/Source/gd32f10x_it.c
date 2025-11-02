@@ -32,22 +32,22 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 OF SUCH DAMAGE.
 */
 #include "gd32f10x_it.h"
-#include "usart.h"
+#include "ustart.h"
 void USART0_IRQHandler(void)
 {
     if(usart_interrupt_flag_get(USART0,USART_INT_FLAG_IDLE) == 1)
     {
-        usart_flag_get(USART0,USART_INT_FLAG_IDLE);
-        usart_data_receive(USART0);
-        U0CB.URxCounter += (U0_RX_MAX+1)-dma_transfer_number_get(DMA0,DMA_CH4);
-        U0CB.URxDataIN ->end = &U0_RX_BUFFER[U0CB.URxcounter - 1];
-        U0CB.URxDataIN++;
-        if(U0CB.URxDataIN == U0CB.URxDataEND)
+        usart_flag_get(USART0,USART_INT_FLAG_IDLE);                                 /**/
+        usart_data_receive(USART0);                                                 /*读串口0数据寄存器，清除中断标志位*/
+        U0CB.URxCounter += (U0_RX_MAX+1)-dma_transfer_number_get(DMA0,DMA_CH4);     /*发送的数据字节数*/
+        U0CB.URxDataIN ->end = &U0_RX_BUFFER[U0CB.URxCounter - 1];
+        U0CB.URxDataIN++;                                                           /*一包数据接收完了*/
+        if(U0CB.URxDataIN == U0CB.URxDataEND)                                       /*接收的包数量超过定义范围*/
         {
-            U0CB.URxDataIN = &U0CB.U0_RxDataPtr[0];
+            U0CB.URxDataIN = &U0CB.URxDataPtr[0];
 
         }
-        if(U0_Rx_SIZE - U0CB.URxCounter >= U0_RX_MAX)
+        if(U0_Rx_SIZE - U0CB.URxCounter >= U0_RX_MAX)                               /*DMA一次传输数据<=256字节*/
         {
             U0CB.URxDataIN -> start = &U0_RX_BUFFER[U0CB.URxCounter];
         }
@@ -56,6 +56,10 @@ void USART0_IRQHandler(void)
             U0CB.URxDataIN -> start = U0_RX_BUFFER;
             U0CB.URxCounter = 0;
         }
+        dma_channel_disable(DMA0,DMA_CH4);
+		dma_transfer_number_config(DMA0,DMA_CH4,U0_RX_MAX+1);
+		dma_memory_address_config(DMA0,DMA_CH4,(uint32_t)U0CB.URxDataIN->start);
+		dma_channel_enable(DMA0,DMA_CH4);
     }
 }
 
