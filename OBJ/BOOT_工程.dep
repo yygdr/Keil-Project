@@ -8,13 +8,13 @@ I (..\CMSIS\Include\core_cmInstr.h)(0x689441E2)
 I (..\CMSIS\Include\core_cmFunc.h)(0x689441E2)
 I (..\CMSIS\Include\system_gd32f10x.h)(0x689441E2)
 I (E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h)(0x595B0FDA)
-I (..\USER\RTE_Components.h)(0x68EE54A6)
+I (..\USER\RTE_Components.h)(0x6908B582)
 I (..\LIB\Include\gd32f10x_dma.h)(0x689441E2)
+I (..\LIB\Include\gd32f10x_gpio.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_misc.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_rcu.h)(0x68EE5981)
-I (..\HardWare\Include\ustart.h)(0x690775E5)
-I (..\LIB\Include\gd32f10x_gpio.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_usart.h)(0x689441E2)
+I (..\HardWare\Include\ustart.h)(0x690775E5)
 F (..\CMSIS\Source\system_gd32f10x.c)(0x689441E2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS/Include -I ../HardWare/Include -I ../USER -I ../LIB/Include -I ../HardWare/Include-I"E:/Keil MDK/ARM/PACK/GigaDevice/GD32F10x_DFP/2.3.0/Device/Include"-D__UVISION_VERSION="537" -DGD32F10X_MD -DUSE_STDPERIPH_DRIVER -DGD32F10X_MD-o ../obj/system_gd32f10x.o -MD)
 I (..\CMSIS\Include\gd32f10x.h)(0x689441E2)
 I (..\CMSIS\Include\core_cm3.h)(0x689441E2)
@@ -23,10 +23,12 @@ I (..\CMSIS\Include\core_cmInstr.h)(0x689441E2)
 I (..\CMSIS\Include\core_cmFunc.h)(0x689441E2)
 I (..\CMSIS\Include\system_gd32f10x.h)(0x689441E2)
 I (E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h)(0x595B0FDA)
-I (..\USER\RTE_Components.h)(0x68EE54A6)
+I (..\USER\RTE_Components.h)(0x6908B582)
 I (..\LIB\Include\gd32f10x_dma.h)(0x689441E2)
+I (..\LIB\Include\gd32f10x_gpio.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_misc.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_rcu.h)(0x68EE5981)
+I (..\LIB\Include\gd32f10x_usart.h)(0x689441E2)
 F (..\CMSIS\Source\startup_gd32f10x_md.s)(0x689441E2)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-4-I"E:/Keil MDK/ARM/PACK/GigaDevice/GD32F10x_DFP/2.3.0/Device/Include"-Wa,armasm,--pd,"__UVISION_VERSION SETA 537" -Wa,armasm,--pd,"GD32F10X_MD SETA 1" -Wa,armasm,--pd,"USE_STDPERIPH_DRIVER SETA 1"-o ../obj/startup_gd32f10x_md.o)
 F (..\HardWare\Source\gd32f10x_it.c)(0x69076ECB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS/Include -I ../HardWare/Include -I ../USER -I ../LIB/Include -I ../HardWare/Include-I"E:/Keil MDK/ARM/PACK/GigaDevice/GD32F10x_DFP/2.3.0/Device/Include"-D__UVISION_VERSION="537" -DGD32F10X_MD -DUSE_STDPERIPH_DRIVER -DGD32F10X_MD-o ../obj/gd32f10x_it.o -MD)
 I (..\HardWare\Include\gd32f10x_it.h)(0x689441E3)
@@ -37,14 +39,14 @@ I (..\CMSIS\Include\core_cmInstr.h)(0x689441E2)
 I (..\CMSIS\Include\core_cmFunc.h)(0x689441E2)
 I (..\CMSIS\Include\system_gd32f10x.h)(0x689441E2)
 I (E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h)(0x595B0FDA)
-I (..\USER\RTE_Components.h)(0x68EE54A6)
+I (..\USER\RTE_Components.h)(0x6908B582)
 I (..\LIB\Include\gd32f10x_dma.h)(0x689441E2)
+I (..\LIB\Include\gd32f10x_gpio.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_misc.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_rcu.h)(0x68EE5981)
-I (..\HardWare\Include\ustart.h)(0x690775E5)
-I (..\LIB\Include\gd32f10x_gpio.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_usart.h)(0x689441E2)
-F (..\HardWare\Source\ustart.c)(0x69077773)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS/Include -I ../HardWare/Include -I ../USER -I ../LIB/Include -I ../HardWare/Include-I"E:/Keil MDK/ARM/PACK/GigaDevice/GD32F10x_DFP/2.3.0/Device/Include"-D__UVISION_VERSION="537" -DGD32F10X_MD -DUSE_STDPERIPH_DRIVER -DGD32F10X_MD-o ../obj/ustart.o -MD)
+I (..\HardWare\Include\ustart.h)(0x690775E5)
+F (..\HardWare\Source\ustart.c)(0x6908BE7F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS/Include -I ../HardWare/Include -I ../USER -I ../LIB/Include -I ../HardWare/Include-I"E:/Keil MDK/ARM/PACK/GigaDevice/GD32F10x_DFP/2.3.0/Device/Include"-D__UVISION_VERSION="537" -DGD32F10X_MD -DUSE_STDPERIPH_DRIVER -DGD32F10X_MD-o ../obj/ustart.o -MD)
 I (E:\Keil MDK\ARM\ARMCLANG\include\stdarg.h)(0x625260D8)
 I (..\HardWare\Include\ustart.h)(0x690775E5)
 I (E:\Keil MDK\ARM\ARMCLANG\include\stdint.h)(0x625260D8)
@@ -55,7 +57,7 @@ I (..\CMSIS\Include\core_cmInstr.h)(0x689441E2)
 I (..\CMSIS\Include\core_cmFunc.h)(0x689441E2)
 I (..\CMSIS\Include\system_gd32f10x.h)(0x689441E2)
 I (E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h)(0x595B0FDA)
-I (..\USER\RTE_Components.h)(0x68EE54A6)
+I (..\USER\RTE_Components.h)(0x6908B582)
 I (..\LIB\Include\gd32f10x_dma.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_misc.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_rcu.h)(0x68EE5981)
@@ -71,10 +73,11 @@ I (..\CMSIS\Include\core_cmInstr.h)(0x689441E2)
 I (..\CMSIS\Include\core_cmFunc.h)(0x689441E2)
 I (..\CMSIS\Include\system_gd32f10x.h)(0x689441E2)
 I (E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h)(0x595B0FDA)
-I (..\USER\RTE_Components.h)(0x68EE54A6)
+I (..\USER\RTE_Components.h)(0x6908B582)
 I (..\LIB\Include\gd32f10x_dma.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_misc.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_rcu.h)(0x68EE5981)
+I (..\LIB\Include\gd32f10x_usart.h)(0x689441E2)
 F (..\LIB\Source\gd32f10x_misc.c)(0x689441E2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS/Include -I ../HardWare/Include -I ../USER -I ../LIB/Include -I ../HardWare/Include-I"E:/Keil MDK/ARM/PACK/GigaDevice/GD32F10x_DFP/2.3.0/Device/Include"-D__UVISION_VERSION="537" -DGD32F10X_MD -DUSE_STDPERIPH_DRIVER -DGD32F10X_MD-o ../obj/gd32f10x_misc.o -MD)
 I (..\LIB\Include\gd32f10x_misc.h)(0x689441E2)
 I (..\CMSIS\Include\gd32f10x.h)(0x689441E2)
@@ -84,9 +87,11 @@ I (..\CMSIS\Include\core_cmInstr.h)(0x689441E2)
 I (..\CMSIS\Include\core_cmFunc.h)(0x689441E2)
 I (..\CMSIS\Include\system_gd32f10x.h)(0x689441E2)
 I (E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h)(0x595B0FDA)
-I (..\USER\RTE_Components.h)(0x68EE54A6)
+I (..\USER\RTE_Components.h)(0x6908B582)
 I (..\LIB\Include\gd32f10x_dma.h)(0x689441E2)
+I (..\LIB\Include\gd32f10x_gpio.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_rcu.h)(0x68EE5981)
+I (..\LIB\Include\gd32f10x_usart.h)(0x689441E2)
 F (..\LIB\Source\gd32f10x_rcu.c)(0x689441E2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS/Include -I ../HardWare/Include -I ../USER -I ../LIB/Include -I ../HardWare/Include-I"E:/Keil MDK/ARM/PACK/GigaDevice/GD32F10x_DFP/2.3.0/Device/Include"-D__UVISION_VERSION="537" -DGD32F10X_MD -DUSE_STDPERIPH_DRIVER -DGD32F10X_MD-o ../obj/gd32f10x_rcu.o -MD)
 I (..\LIB\Include\gd32f10x_rcu.h)(0x68EE5981)
 I (..\CMSIS\Include\gd32f10x.h)(0x689441E2)
@@ -96,9 +101,11 @@ I (..\CMSIS\Include\core_cmInstr.h)(0x689441E2)
 I (..\CMSIS\Include\core_cmFunc.h)(0x689441E2)
 I (..\CMSIS\Include\system_gd32f10x.h)(0x689441E2)
 I (E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h)(0x595B0FDA)
-I (..\USER\RTE_Components.h)(0x68EE54A6)
+I (..\USER\RTE_Components.h)(0x6908B582)
 I (..\LIB\Include\gd32f10x_dma.h)(0x689441E2)
+I (..\LIB\Include\gd32f10x_gpio.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_misc.h)(0x689441E2)
+I (..\LIB\Include\gd32f10x_usart.h)(0x689441E2)
 F (..\LIB\Source\gd32f10x_usart.c)(0x689441E2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS/Include -I ../HardWare/Include -I ../USER -I ../LIB/Include -I ../HardWare/Include-I"E:/Keil MDK/ARM/PACK/GigaDevice/GD32F10x_DFP/2.3.0/Device/Include"-D__UVISION_VERSION="537" -DGD32F10X_MD -DUSE_STDPERIPH_DRIVER -DGD32F10X_MD-o ../obj/gd32f10x_usart.o -MD)
 I (..\LIB\Include\gd32f10x_usart.h)(0x689441E2)
 I (..\CMSIS\Include\gd32f10x.h)(0x689441E2)
@@ -108,8 +115,9 @@ I (..\CMSIS\Include\core_cmInstr.h)(0x689441E2)
 I (..\CMSIS\Include\core_cmFunc.h)(0x689441E2)
 I (..\CMSIS\Include\system_gd32f10x.h)(0x689441E2)
 I (E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h)(0x595B0FDA)
-I (..\USER\RTE_Components.h)(0x68EE54A6)
+I (..\USER\RTE_Components.h)(0x6908B582)
 I (..\LIB\Include\gd32f10x_dma.h)(0x689441E2)
+I (..\LIB\Include\gd32f10x_gpio.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_misc.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_rcu.h)(0x68EE5981)
 F (..\LIB\Source\gd32f10x_dma.c)(0x689441E2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS/Include -I ../HardWare/Include -I ../USER -I ../LIB/Include -I ../HardWare/Include-I"E:/Keil MDK/ARM/PACK/GigaDevice/GD32F10x_DFP/2.3.0/Device/Include"-D__UVISION_VERSION="537" -DGD32F10X_MD -DUSE_STDPERIPH_DRIVER -DGD32F10X_MD-o ../obj/gd32f10x_dma.o -MD)
@@ -121,6 +129,8 @@ I (..\CMSIS\Include\core_cmInstr.h)(0x689441E2)
 I (..\CMSIS\Include\core_cmFunc.h)(0x689441E2)
 I (..\CMSIS\Include\system_gd32f10x.h)(0x689441E2)
 I (E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h)(0x595B0FDA)
-I (..\USER\RTE_Components.h)(0x68EE54A6)
+I (..\USER\RTE_Components.h)(0x6908B582)
+I (..\LIB\Include\gd32f10x_gpio.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_misc.h)(0x689441E2)
 I (..\LIB\Include\gd32f10x_rcu.h)(0x68EE5981)
+I (..\LIB\Include\gd32f10x_usart.h)(0x689441E2)

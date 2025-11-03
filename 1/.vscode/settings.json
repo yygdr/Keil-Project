@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "gd32f10x.h": "c",
+        "usart.h": "c",
+        "core_cm3.h": "c",
+        "system_gd32f10x.h": "c"
+    }
+}
