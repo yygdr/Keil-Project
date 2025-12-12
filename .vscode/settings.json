@@ -4,6 +4,9 @@
         "gd32f10x_usart.h": "c",
         "gd32f10x.h": "c",
         "ustart.h": "c",
-        "gd32f10x_gpio.h": "c"
+        "gd32f10x_gpio.h": "c",
+        "gd32f10x_misc.h": "c",
+        "delay.h": "c",
+        "iic.h": "c"
     }
 }

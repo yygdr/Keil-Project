@@ -1,0 +1,17 @@
+..\obj\gd32f10x_dma.o: ..\LIB\Source\gd32f10x_dma.c
+..\obj\gd32f10x_dma.o: ..\LIB\Include\gd32f10x_dma.h
+..\obj\gd32f10x_dma.o: ..\CMSIS\Include\gd32f10x.h
+..\obj\gd32f10x_dma.o: ..\CMSIS\Include\core_cm3.h
+..\obj\gd32f10x_dma.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\gd32f10x_dma.o: ..\CMSIS\Include\core_cmInstr.h
+..\obj\gd32f10x_dma.o: ..\CMSIS\Include\core_cmFunc.h
+..\obj\gd32f10x_dma.o: ..\CMSIS\Include\system_gd32f10x.h
+..\obj\gd32f10x_dma.o: C:\Keil_v5\ARM\PACK\GigaDevice\GD32F10x_DFP\2.0.2\Device\Include\gd32f10x_libopt.h
+..\obj\gd32f10x_dma.o: ..\USER\RTE_Components.h
+..\obj\gd32f10x_dma.o: ..\LIB\Include\gd32f10x_dma.h
+..\obj\gd32f10x_dma.o: ..\LIB\Include\gd32f10x_gpio.h
+..\obj\gd32f10x_dma.o: ..\CMSIS\Include\gd32f10x.h
+..\obj\gd32f10x_dma.o: ..\LIB\Include\gd32f10x_misc.h
+..\obj\gd32f10x_dma.o: ..\LIB\Include\gd32f10x_rcu.h
+..\obj\gd32f10x_dma.o: ..\LIB\Include\gd32f10x_spi.h
+..\obj\gd32f10x_dma.o: ..\LIB\Include\gd32f10x_usart.h

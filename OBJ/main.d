@@ -7,4 +7,5 @@
   ..\USER\RTE_Components.h ..\LIB\Include\gd32f10x_dma.h \
   ..\LIB\Include\gd32f10x_gpio.h ..\LIB\Include\gd32f10x_misc.h \
   ..\LIB\Include\gd32f10x_rcu.h ..\LIB\Include\gd32f10x_usart.h \
-  ..\HardWare\Include\ustart.h
+  ..\HardWare\Include\ustart.h ..\HardWare\Include\delay.h \
+  ..\HardWare\Include\iic.h ..\HardWare\Include\m24c02.h

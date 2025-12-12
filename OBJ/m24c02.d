@@ -1,0 +1,11 @@
+../obj/m24c02.o: ..\HardWare\Source\m24c02.c ..\CMSIS\Include\gd32f10x.h \
+  ..\CMSIS\Include\core_cm3.h \
+  E:\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\CMSIS\Include\core_cmInstr.h ..\CMSIS\Include\core_cmFunc.h \
+  ..\CMSIS\Include\system_gd32f10x.h \
+  E:\Keil\ MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h \
+  ..\USER\RTE_Components.h ..\LIB\Include\gd32f10x_dma.h \
+  ..\LIB\Include\gd32f10x_gpio.h ..\LIB\Include\gd32f10x_misc.h \
+  ..\LIB\Include\gd32f10x_rcu.h ..\LIB\Include\gd32f10x_usart.h \
+  ..\HardWare\Include\IIC.h ..\HardWare\Include\delay.h \
+  ..\HardWare\Include\M24C02.h
