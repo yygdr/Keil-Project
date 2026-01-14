@@ -1,10 +1,18 @@
-../obj/delay.o: ..\HardWare\Source\delay.c ..\CMSIS\Include\gd32f10x.h \
-  ..\CMSIS\Include\core_cm3.h \
-  E:\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\CMSIS\Include\core_cmInstr.h ..\CMSIS\Include\core_cmFunc.h \
-  ..\CMSIS\Include\system_gd32f10x.h \
-  E:\Keil\ MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h \
-  ..\USER\RTE_Components.h ..\LIB\Include\gd32f10x_dma.h \
-  ..\LIB\Include\gd32f10x_gpio.h ..\LIB\Include\gd32f10x_misc.h \
-  ..\LIB\Include\gd32f10x_rcu.h ..\LIB\Include\gd32f10x_usart.h \
-  ..\HardWare\Include\delay.h
+..\obj\delay.o: ..\HardWare\Source\delay.c
+..\obj\delay.o: ..\CMSIS\Include\gd32f10x.h
+..\obj\delay.o: ..\CMSIS\Include\core_cm3.h
+..\obj\delay.o: E:\Keil MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\delay.o: ..\CMSIS\Include\core_cmInstr.h
+..\obj\delay.o: ..\CMSIS\Include\core_cmFunc.h
+..\obj\delay.o: ..\CMSIS\Include\system_gd32f10x.h
+..\obj\delay.o: E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h
+..\obj\delay.o: ..\USER\RTE_Components.h
+..\obj\delay.o: ..\LIB\Include\gd32f10x_dma.h
+..\obj\delay.o: ..\CMSIS\Include\gd32f10x.h
+..\obj\delay.o: ..\LIB\Include\gd32f10x_fmc.h
+..\obj\delay.o: ..\LIB\Include\gd32f10x_gpio.h
+..\obj\delay.o: ..\LIB\Include\gd32f10x_misc.h
+..\obj\delay.o: ..\LIB\Include\gd32f10x_rcu.h
+..\obj\delay.o: ..\LIB\Include\gd32f10x_spi.h
+..\obj\delay.o: ..\LIB\Include\gd32f10x_usart.h
+..\obj\delay.o: ..\HardWare\Include\delay.h

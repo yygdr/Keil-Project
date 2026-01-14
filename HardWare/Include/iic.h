@@ -24,7 +24,7 @@ void IIC_Stop();
 void IIC_Send_Byte(uint8_t tx);
 
 
-uint8_t IIC_Wait_ACK(uint8_t timeout);
+uint8_t IIC_Wait_ACK(int16_t timeout);
 
 
 uint8_t IIC_Read_Byte(uint8_t ack);

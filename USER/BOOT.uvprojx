@@ -10,8 +10,8 @@
       <TargetName>工程</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6180000::V6.18::ARMCLANG</pCCUsed>
-      <uAC6>1</uAC6>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::.\ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>GD32F103C8</Device>
@@ -314,7 +314,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>0</Optim>
+            <Optim>2</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -323,7 +323,7 @@
             <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>3</wLevel>
+            <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>GD32F10X_MD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CMSIS\Include;..\HardWare\Include;..\USER;..\LIB\Include;..\HardWare\Include</IncludePath>
+              <IncludePath>..\CMSIS\Include;..\HardWare\Include;..\USER;..\LIB\Include;..\HardWare\Include;..\USER</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -389,6 +389,11 @@
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
             </File>
+            <File>
+              <FileName>main.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\main.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -434,6 +439,26 @@
               <FileType>1</FileType>
               <FilePath>..\HardWare\Source\m24c02.c</FilePath>
             </File>
+            <File>
+              <FileName>spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HardWare\Source\spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>w25q64.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HardWare\Source\w25q64.c</FilePath>
+            </File>
+            <File>
+              <FileName>fmc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HardWare\Source\fmc.c</FilePath>
+            </File>
+            <File>
+              <FileName>boot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HardWare\Source\boot.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -463,6 +488,16 @@
               <FileName>gd32f10x_dma.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\LIB\Source\gd32f10x_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>gd32f10x_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LIB\Source\gd32f10x_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>gd32f10x_fmc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\LIB\Source\gd32f10x_fmc.c</FilePath>
             </File>
           </Files>
         </Group>

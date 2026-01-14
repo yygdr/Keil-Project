@@ -1,10 +1,20 @@
-../obj/iic.o: ..\HardWare\Source\iic.c ..\LIB\Include\gd32f10x_gpio.h \
-  ..\CMSIS\Include\gd32f10x.h ..\CMSIS\Include\core_cm3.h \
-  E:\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\CMSIS\Include\core_cmInstr.h ..\CMSIS\Include\core_cmFunc.h \
-  ..\CMSIS\Include\system_gd32f10x.h \
-  E:\Keil\ MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h \
-  ..\USER\RTE_Components.h ..\LIB\Include\gd32f10x_dma.h \
-  ..\LIB\Include\gd32f10x_misc.h ..\LIB\Include\gd32f10x_rcu.h \
-  ..\LIB\Include\gd32f10x_usart.h ..\HardWare\Include\delay.h \
-  ..\HardWare\Include\iic.h
+..\obj\iic.o: ..\HardWare\Source\iic.c
+..\obj\iic.o: ..\LIB\Include\gd32f10x_gpio.h
+..\obj\iic.o: ..\CMSIS\Include\gd32f10x.h
+..\obj\iic.o: ..\CMSIS\Include\core_cm3.h
+..\obj\iic.o: E:\Keil MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\iic.o: ..\CMSIS\Include\core_cmInstr.h
+..\obj\iic.o: ..\CMSIS\Include\core_cmFunc.h
+..\obj\iic.o: ..\CMSIS\Include\system_gd32f10x.h
+..\obj\iic.o: E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h
+..\obj\iic.o: ..\USER\RTE_Components.h
+..\obj\iic.o: ..\LIB\Include\gd32f10x_dma.h
+..\obj\iic.o: ..\CMSIS\Include\gd32f10x.h
+..\obj\iic.o: ..\LIB\Include\gd32f10x_fmc.h
+..\obj\iic.o: ..\LIB\Include\gd32f10x_gpio.h
+..\obj\iic.o: ..\LIB\Include\gd32f10x_misc.h
+..\obj\iic.o: ..\LIB\Include\gd32f10x_rcu.h
+..\obj\iic.o: ..\LIB\Include\gd32f10x_spi.h
+..\obj\iic.o: ..\LIB\Include\gd32f10x_usart.h
+..\obj\iic.o: ..\HardWare\Include\delay.h
+..\obj\iic.o: ..\HardWare\Include\iic.h

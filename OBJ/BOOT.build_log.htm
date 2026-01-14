@@ -9,12 +9,12 @@ License Information: ARM ARM, ARM, LIC=14HV2-9IGW6-UHV8H-WB46S-CCLLQ-Y7J0U
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.37.0.0
-Toolchain Path:  E:\Keil MDK\ARM\ARMCLANG\Bin
-C Compiler:      ArmClang.exe V6.18
-Assembler:       Armasm.exe V6.18
-Linker/Locator:  ArmLink.exe V6.18
-Library Manager: ArmAr.exe V6.18
-Hex Converter:   FromElf.exe V6.18
+Toolchain Path:  E:\Keil MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
 CPU DLL:         SARMCM3.DLL V5.37.0.0
 Dialog DLL:      DCM.DLL V1.17.5.0
 Target DLL:      CMSIS_AGDI.dll V1.33.12.0
@@ -22,112 +22,112 @@ Dialog DLL:      TCM.DLL V1.56.1.0
  
 <h2>Project:</h2>
 C:\Users\Zeng\Desktop\Keil Project\USER\BOOT.uvprojx
-Project File Date:  12/13/2025
+Project File Date:  12/21/2025
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.18', folder: 'E:\Keil MDK\ARM\ARMCLANG\Bin'
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\Keil MDK\ARM\ARMCC\Bin'
 Rebuild target '工程'
-../CMSIS/Source/system_gd32f10x.c(38): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-1 warning generated.
-compiling system_gd32f10x.c...
-main.c(1): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-1 warning generated.
-compiling main.c...
-../HardWare/Source/gd32f10x_it.c(34): warning: In file included from...
-../HardWare/Include\gd32f10x_it.h(38): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-../HardWare/Source/gd32f10x_it.c(40): warning: implicit conversion from 'int' to 'usart_flag_enum' changes value from 262916 to 4 [-Wconstant-conversion]
-        usart_flag_get(USART0,USART_INT_FLAG_IDLE);                                 /**/
-        ~~~~~~~~~~~~~~        ^~~~~~~~~~~~~~~~~~~
-2 warnings generated.
-compiling gd32f10x_it.c...
 assembling startup_gd32f10x_md.s...
-../HardWare/Source/ustart.c(2): warning: In file included from...
-../HardWare/Include\ustart.h(4): warning: In file included from...
-../LIB/Include\gd32f10x_gpio.h(38): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-1 warning generated.
-compiling ustart.c...
-../LIB/Source/gd32f10x_misc.c(35): warning: In file included from...
-../LIB/Include\gd32f10x_misc.h(38): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-1 warning generated.
-compiling gd32f10x_misc.c...
-../HardWare/Source/delay.c(1): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-1 warning generated.
+compiling spi.c...
+compiling main.c...
+..\HardWare\Include\ustart.h(33): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Include\delay.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Include\iic.h(15): warning:  #1295-D: Deprecated declaration IIC_Init - give arg types
+  void IIC_Init();
+..\HardWare\Include\iic.h(18): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HardWare\Include\iic.h(21): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HardWare\Include\iic.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Include\m24c02.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c(53): warning:  #223-D: function "M24C02_WriteOTAInfo" declared implicitly
+  					M24C02_WriteOTAInfo();         //写入24C02内保存
+main.c: 8 warnings, 0 errors
 compiling delay.c...
-../HardWare/Source/iic.c(1): warning: In file included from...
-../LIB/Include\gd32f10x_gpio.h(38): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-1 warning generated.
-compiling iic.c...
-../HardWare/Source/m24c02.c(1): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-1 warning generated.
+..\HardWare\Include\delay.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Source\delay.c(22): warning:  #1-D: last line of file ends without a newline
+  }
+..\HardWare\Source\delay.c: 2 warnings, 0 errors
 compiling m24c02.c...
-../LIB/Source/gd32f10x_gpio.c(35): warning: In file included from...
-../LIB/Include\gd32f10x_gpio.h(38): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-1 warning generated.
+..\HardWare\Include\delay.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Include\IIC.h(15): warning:  #1295-D: Deprecated declaration IIC_Init - give arg types
+  void IIC_Init();
+..\HardWare\Include\IIC.h(18): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HardWare\Include\IIC.h(21): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HardWare\Include\IIC.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Include\M24C02.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Source\m24c02.c(8): warning:  #177-D: variable "i"  was declared but never referenced
+      uint8_t i;
+..\HardWare\Source\m24c02.c: 7 warnings, 0 errors
+compiling fmc.c...
+compiling gd32f10x_it.c...
+..\HardWare\Include\ustart.h(33): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Source\gd32f10x_it.c(40): warning:  #188-D: enumerated type mixed with another type
+          usart_flag_get(USART0,USART_INT_FLAG_IDLE);                                 /**/
+..\HardWare\Source\gd32f10x_it.c(40): warning:  #69-D: integer conversion resulted in truncation
+          usart_flag_get(USART0,USART_INT_FLAG_IDLE);                                 /**/
+..\HardWare\Source\gd32f10x_it.c: 3 warnings, 0 errors
+compiling system_gd32f10x.c...
+compiling gd32f10x_misc.c...
+compiling boot.c...
+..\HardWare\Include\ustart.h(33): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Include\delay.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Include\iic.h(15): warning:  #1295-D: Deprecated declaration IIC_Init - give arg types
+  void IIC_Init();
+..\HardWare\Include\iic.h(18): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HardWare\Include\iic.h(21): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HardWare\Include\iic.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Include\m24c02.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Source\boot.c: 7 warnings, 0 errors
+compiling iic.c...
+..\HardWare\Include\delay.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Include\iic.h(15): warning:  #1295-D: Deprecated declaration IIC_Init - give arg types
+  void IIC_Init();
+..\HardWare\Include\iic.h(18): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HardWare\Include\iic.h(21): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HardWare\Include\iic.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Source\iic.c: 5 warnings, 0 errors
+compiling w25q64.c...
+..\HardWare\Source\w25q64.c(75): warning:  #1-D: last line of file ends without a newline
+  }
+..\HardWare\Source\w25q64.c: 1 warning, 0 errors
 compiling gd32f10x_gpio.c...
-../LIB/Source/gd32f10x_usart.c(35): warning: In file included from...
-../LIB/Include\gd32f10x_usart.h(38): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-1 warning generated.
-compiling gd32f10x_usart.c...
-../LIB/Source/gd32f10x_dma.c(35): warning: In file included from...
-../LIB/Include\gd32f10x_dma.h(38): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-1 warning generated.
-compiling gd32f10x_dma.c...
-../LIB/Source/gd32f10x_rcu.c(35): warning: In file included from...
-../LIB/Include\gd32f10x_rcu.h(38): warning: In file included from...
-../CMSIS/Include\gd32f10x.h(308): warning: In file included from...
-../CMSIS/Include/core_cm3.h(122): warning: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)" [-W#warnings]
-    #warning "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
-     ^
-1 warning generated.
+compiling ustart.c...
+..\HardWare\Include\ustart.h(33): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Source\ustart.c(81): warning:  #550-D: variable "j"  was set but never used
+  	uint8_t j;
+..\HardWare\Source\ustart.c: 2 warnings, 0 errors
 compiling gd32f10x_rcu.c...
+compiling gd32f10x_usart.c...
+compiling gd32f10x_spi.c...
+compiling gd32f10x_dma.c...
+compiling gd32f10x_fmc.c...
 linking...
-Program Size: Code=12784 RO-data=844 RW-data=0 ZI-data=6080  
+Program Size: Code=12148 RO-data=844 RW-data=16 ZI-data=6904  
 FromELF: creating hex file...
-"..\OBJ\BOOT.axf" - 0 Error(s), 13 Warning(s).
+"..\OBJ\BOOT.axf" - 0 Error(s), 35 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -140,7 +140,7 @@ Package Vendor: GigaDevice
   E:/Keil MDK/ARM/PACK/GigaDevice/GD32F10x_DFP/2.3.0/Device/Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

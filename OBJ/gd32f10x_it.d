@@ -1,11 +1,19 @@
-../obj/gd32f10x_it.o: ..\HardWare\Source\gd32f10x_it.c \
-  ..\HardWare\Include\gd32f10x_it.h ..\CMSIS\Include\gd32f10x.h \
-  ..\CMSIS\Include\core_cm3.h \
-  E:\Keil\ MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\CMSIS\Include\core_cmInstr.h ..\CMSIS\Include\core_cmFunc.h \
-  ..\CMSIS\Include\system_gd32f10x.h \
-  E:\Keil\ MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h \
-  ..\USER\RTE_Components.h ..\LIB\Include\gd32f10x_dma.h \
-  ..\LIB\Include\gd32f10x_gpio.h ..\LIB\Include\gd32f10x_misc.h \
-  ..\LIB\Include\gd32f10x_rcu.h ..\LIB\Include\gd32f10x_usart.h \
-  ..\HardWare\Include\ustart.h
+..\obj\gd32f10x_it.o: ..\HardWare\Source\gd32f10x_it.c
+..\obj\gd32f10x_it.o: ..\HardWare\Include\gd32f10x_it.h
+..\obj\gd32f10x_it.o: ..\CMSIS\Include\gd32f10x.h
+..\obj\gd32f10x_it.o: ..\CMSIS\Include\core_cm3.h
+..\obj\gd32f10x_it.o: E:\Keil MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\gd32f10x_it.o: ..\CMSIS\Include\core_cmInstr.h
+..\obj\gd32f10x_it.o: ..\CMSIS\Include\core_cmFunc.h
+..\obj\gd32f10x_it.o: ..\CMSIS\Include\system_gd32f10x.h
+..\obj\gd32f10x_it.o: E:\Keil MDK\ARM\PACK\GigaDevice\GD32F10x_DFP\2.3.0\Device\Include\gd32f10x_libopt.h
+..\obj\gd32f10x_it.o: ..\USER\RTE_Components.h
+..\obj\gd32f10x_it.o: ..\LIB\Include\gd32f10x_dma.h
+..\obj\gd32f10x_it.o: ..\CMSIS\Include\gd32f10x.h
+..\obj\gd32f10x_it.o: ..\LIB\Include\gd32f10x_fmc.h
+..\obj\gd32f10x_it.o: ..\LIB\Include\gd32f10x_gpio.h
+..\obj\gd32f10x_it.o: ..\LIB\Include\gd32f10x_misc.h
+..\obj\gd32f10x_it.o: ..\LIB\Include\gd32f10x_rcu.h
+..\obj\gd32f10x_it.o: ..\LIB\Include\gd32f10x_spi.h
+..\obj\gd32f10x_it.o: ..\LIB\Include\gd32f10x_usart.h
+..\obj\gd32f10x_it.o: ..\HardWare\Include\ustart.h

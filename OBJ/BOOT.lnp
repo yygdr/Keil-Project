@@ -7,11 +7,17 @@
 "..\obj\delay.o"
 "..\obj\iic.o"
 "..\obj\m24c02.o"
+"..\obj\spi.o"
+"..\obj\w25q64.o"
+"..\obj\fmc.o"
+"..\obj\boot.o"
 "..\obj\gd32f10x_gpio.o"
 "..\obj\gd32f10x_misc.o"
 "..\obj\gd32f10x_rcu.o"
 "..\obj\gd32f10x_usart.o"
 "..\obj\gd32f10x_dma.o"
+"..\obj\gd32f10x_spi.o"
+"..\obj\gd32f10x_fmc.o"
 --strict --scatter "..\OBJ\BOOT.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

@@ -1,20 +1,14 @@
 #include "gd32f10x_gpio.h"
 #include "delay.h"
 #include "iic.h"
+
 void IIC_Init()
 {
     rcu_periph_clock_enable(RCU_GPIOB);
-	gpio_init(GPIOB,GPIO_MODE_AF_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_6);
-	gpio_init(GPIOB,GPIO_MODE_AF_OD, GPIO_OSPEED_50MHZ, GPIO_PIN_7);
-
+	gpio_init(GPIOB,GPIO_MODE_OUT_OD, GPIO_OSPEED_50MHZ, GPIO_PIN_6);
+	gpio_init(GPIOB,GPIO_MODE_OUT_OD, GPIO_OSPEED_50MHZ, GPIO_PIN_7);
     IIC_SCL_H;
-    IIC_SDA_H;
-    // Delay_Us(2);
-    // IIC_SCL_H;
-    // Delay_Us(2);
-    // IIC_SDA_L;
-    // Delay_Us(2);
-    // IIC_SCL_L;
+    IIC_SDA_H;  
 }
 
 void IIC_Start()
@@ -59,7 +53,7 @@ void IIC_Send_Byte(uint8_t tx)
     //IIC_Stop();
 }
 
-uint8_t IIC_Wait_ACK(uint8_t timeout)
+uint8_t IIC_Wait_ACK(int16_t timeout)
 {
     do
     {
@@ -68,7 +62,7 @@ uint8_t IIC_Wait_ACK(uint8_t timeout)
     } while ((READ_SDA)&&(timeout>=0));
     if(timeout<0) return 1;
     IIC_SCL_H;
-    Delay_Us(2);
+    Delay_Us(2);                      
     if(READ_SDA!=0) return 2;
     IIC_SCL_L;
     Delay_Us(2);
@@ -113,3 +107,4 @@ uint8_t IIC_Read_Byte(uint8_t ack)
 
 return rxd;
 }
+
