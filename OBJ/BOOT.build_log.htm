@@ -22,13 +22,12 @@ Dialog DLL:      TCM.DLL V1.56.1.0
  
 <h2>Project:</h2>
 C:\Users\Zeng\Desktop\Keil Project\USER\BOOT.uvprojx
-Project File Date:  12/21/2025
+Project File Date:  03/23/2026
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\Keil MDK\ARM\ARMCC\Bin'
 Rebuild target '工程'
 assembling startup_gd32f10x_md.s...
-compiling spi.c...
 compiling main.c...
 ..\HardWare\Include\ustart.h(33): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -47,12 +46,42 @@ compiling main.c...
 main.c(53): warning:  #223-D: function "M24C02_WriteOTAInfo" declared implicitly
   					M24C02_WriteOTAInfo();         //写入24C02内保存
 main.c: 8 warnings, 0 errors
+compiling gd32f10x_it.c...
+..\HardWare\Include\ustart.h(33): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Source\gd32f10x_it.c(40): warning:  #188-D: enumerated type mixed with another type
+          usart_flag_get(USART0,USART_INT_FLAG_IDLE);                                 /**/
+..\HardWare\Source\gd32f10x_it.c(40): warning:  #69-D: integer conversion resulted in truncation
+          usart_flag_get(USART0,USART_INT_FLAG_IDLE);                                 /**/
+..\HardWare\Source\gd32f10x_it.c: 3 warnings, 0 errors
+compiling ustart.c...
+..\HardWare\Include\ustart.h(33): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Source\ustart.c(81): warning:  #550-D: variable "j"  was set but never used
+  	uint8_t j;
+..\HardWare\Source\ustart.c: 2 warnings, 0 errors
+compiling fmc.c...
+compiling iic.c...
+..\HardWare\Include\delay.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Include\iic.h(15): warning:  #1295-D: Deprecated declaration IIC_Init - give arg types
+  void IIC_Init();
+..\HardWare\Include\iic.h(18): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
+  void IIC_Start();
+..\HardWare\Include\iic.h(21): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
+  void IIC_Stop();
+..\HardWare\Include\iic.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HardWare\Source\iic.c: 5 warnings, 0 errors
+compiling gd32f10x_misc.c...
 compiling delay.c...
 ..\HardWare\Include\delay.h(15): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HardWare\Source\delay.c(22): warning:  #1-D: last line of file ends without a newline
   }
 ..\HardWare\Source\delay.c: 2 warnings, 0 errors
+compiling system_gd32f10x.c...
+compiling gd32f10x_gpio.c...
 compiling m24c02.c...
 ..\HardWare\Include\delay.h(15): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -69,17 +98,11 @@ compiling m24c02.c...
 ..\HardWare\Source\m24c02.c(8): warning:  #177-D: variable "i"  was declared but never referenced
       uint8_t i;
 ..\HardWare\Source\m24c02.c: 7 warnings, 0 errors
-compiling fmc.c...
-compiling gd32f10x_it.c...
-..\HardWare\Include\ustart.h(33): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HardWare\Source\gd32f10x_it.c(40): warning:  #188-D: enumerated type mixed with another type
-          usart_flag_get(USART0,USART_INT_FLAG_IDLE);                                 /**/
-..\HardWare\Source\gd32f10x_it.c(40): warning:  #69-D: integer conversion resulted in truncation
-          usart_flag_get(USART0,USART_INT_FLAG_IDLE);                                 /**/
-..\HardWare\Source\gd32f10x_it.c: 3 warnings, 0 errors
-compiling system_gd32f10x.c...
-compiling gd32f10x_misc.c...
+compiling w25q64.c...
+..\HardWare\Source\w25q64.c(75): warning:  #1-D: last line of file ends without a newline
+  }
+..\HardWare\Source\w25q64.c: 1 warning, 0 errors
+compiling spi.c...
 compiling boot.c...
 ..\HardWare\Include\ustart.h(33): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -96,33 +119,10 @@ compiling boot.c...
 ..\HardWare\Include\m24c02.h(15): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\HardWare\Source\boot.c: 7 warnings, 0 errors
-compiling iic.c...
-..\HardWare\Include\delay.h(15): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HardWare\Include\iic.h(15): warning:  #1295-D: Deprecated declaration IIC_Init - give arg types
-  void IIC_Init();
-..\HardWare\Include\iic.h(18): warning:  #1295-D: Deprecated declaration IIC_Start - give arg types
-  void IIC_Start();
-..\HardWare\Include\iic.h(21): warning:  #1295-D: Deprecated declaration IIC_Stop - give arg types
-  void IIC_Stop();
-..\HardWare\Include\iic.h(35): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HardWare\Source\iic.c: 5 warnings, 0 errors
-compiling w25q64.c...
-..\HardWare\Source\w25q64.c(75): warning:  #1-D: last line of file ends without a newline
-  }
-..\HardWare\Source\w25q64.c: 1 warning, 0 errors
-compiling gd32f10x_gpio.c...
-compiling ustart.c...
-..\HardWare\Include\ustart.h(33): warning:  #1-D: last line of file ends without a newline
-  #endif
-..\HardWare\Source\ustart.c(81): warning:  #550-D: variable "j"  was set but never used
-  	uint8_t j;
-..\HardWare\Source\ustart.c: 2 warnings, 0 errors
-compiling gd32f10x_rcu.c...
 compiling gd32f10x_usart.c...
-compiling gd32f10x_spi.c...
+compiling gd32f10x_rcu.c...
 compiling gd32f10x_dma.c...
+compiling gd32f10x_spi.c...
 compiling gd32f10x_fmc.c...
 linking...
 Program Size: Code=12148 RO-data=844 RW-data=16 ZI-data=6904  
@@ -140,7 +140,7 @@ Package Vendor: GigaDevice
   E:/Keil MDK/ARM/PACK/GigaDevice/GD32F10x_DFP/2.3.0/Device/Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

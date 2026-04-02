@@ -301,7 +301,7 @@
               </OCR_RVCT8>
               <OCR_RVCT9>
                 <Type>0</Type>
-                <StartAddress>0x20000000</StartAddress>
+                <StartAddress>0x20000100</StartAddress>
                 <Size>0x5000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
@@ -368,10 +368,10 @@
             <noStLib>0</noStLib>
             <RepFail>1</RepFail>
             <useFile>0</useFile>
-            <TextAddressRange>0x08000000</TextAddressRange>
-            <DataAddressRange>0x20000000</DataAddressRange>
+            <TextAddressRange>0x20000000</TextAddressRange>
+            <DataAddressRange>0x20001000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile></ScatterFile>
+            <ScatterFile>..\OBJ\BOOT.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>

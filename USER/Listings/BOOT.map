@@ -1134,16 +1134,16 @@ Image Symbol Table
     __lcctype_c_name                         0x080031b4   Data           2  lc_ctype_c.o(locale$$data)
     __lcctype_c_start                        0x080031bc   Data           0  lc_ctype_c.o(locale$$data)
     __lcctype_c_end                          0x080032c0   Data           0  lc_ctype_c.o(locale$$data)
-    .data                                    0x20000000   Section       12  main.o(.data)
-    .data                                    0x2000000c   Section        4  boot.o(.data)
-    .bss                                     0x20000010   Section     1076  main.o(.bss)
-    .bss                                     0x20000444   Section     4192  ustart.o(.bss)
-    .bss                                     0x200014a4   Section       96  libspace.o(.bss)
-    HEAP                                     0x20001508   Section      512  startup_gd32f10x_md.o(HEAP)
-    Heap_Mem                                 0x20001508   Data         512  startup_gd32f10x_md.o(HEAP)
-    STACK                                    0x20001708   Section     1024  startup_gd32f10x_md.o(STACK)
-    Stack_Mem                                0x20001708   Data        1024  startup_gd32f10x_md.o(STACK)
-    __initial_sp                             0x20001b08   Data           0  startup_gd32f10x_md.o(STACK)
+    .data                                    0x20000100   Section       12  main.o(.data)
+    .data                                    0x2000010c   Section        4  boot.o(.data)
+    .bss                                     0x20000110   Section     1076  main.o(.bss)
+    .bss                                     0x20000544   Section     4192  ustart.o(.bss)
+    .bss                                     0x200015a4   Section       96  libspace.o(.bss)
+    HEAP                                     0x20001608   Section      512  startup_gd32f10x_md.o(HEAP)
+    Heap_Mem                                 0x20001608   Data         512  startup_gd32f10x_md.o(HEAP)
+    STACK                                    0x20001808   Section     1024  startup_gd32f10x_md.o(STACK)
+    Stack_Mem                                0x20001808   Data        1024  startup_gd32f10x_md.o(STACK)
+    __initial_sp                             0x20001c08   Data           0  startup_gd32f10x_md.o(STACK)
 
     Global Symbols
 
@@ -1464,17 +1464,17 @@ Image Symbol Table
     Region$$Table$$Base                      0x08003174   Number         0  anon$$obj.o(Region$$Table)
     Region$$Table$$Limit                     0x08003194   Number         0  anon$$obj.o(Region$$Table)
     __ctype                                  0x080031bd   Data           0  lc_ctype_c.o(locale$$data)
-    wdata                                    0x20000000   Data           4  main.o(.data)
-    BootStaFlag                              0x20000004   Data           4  main.o(.data)
-    rdata                                    0x20000008   Data           4  main.o(.data)
-    load_A                                   0x2000000c   Data           4  boot.o(.data)
-    OTA_Info                                 0x20000010   Data          48  main.o(.bss)
-    UpDataA                                  0x20000040   Data        1028  main.o(.bss)
-    U0_RX_BUFFER                             0x20000444   Data        2048  ustart.o(.bss)
-    U0_TX_BUFFER                             0x20000c44   Data        2048  ustart.o(.bss)
-    U0CB                                     0x20001444   Data          96  ustart.o(.bss)
-    __libspace_start                         0x200014a4   Data          96  libspace.o(.bss)
-    __temporary_stack_top$libspace           0x20001504   Data           0  libspace.o(.bss)
+    wdata                                    0x20000100   Data           4  main.o(.data)
+    BootStaFlag                              0x20000104   Data           4  main.o(.data)
+    rdata                                    0x20000108   Data           4  main.o(.data)
+    load_A                                   0x2000010c   Data           4  boot.o(.data)
+    OTA_Info                                 0x20000110   Data          48  main.o(.bss)
+    UpDataA                                  0x20000140   Data        1028  main.o(.bss)
+    U0_RX_BUFFER                             0x20000544   Data        2048  ustart.o(.bss)
+    U0_TX_BUFFER                             0x20000d44   Data        2048  ustart.o(.bss)
+    U0CB                                     0x20001544   Data          96  ustart.o(.bss)
+    __libspace_start                         0x200015a4   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x20001604   Data           0  libspace.o(.bss)
 
 
 
@@ -1732,18 +1732,18 @@ Memory Map of the image
     0x080031b0   0x080031b0   0x00000110   Data   RO         2053    locale$$data        c_w.l(lc_ctype_c.o)
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080032c0, Size: 0x00001b08, Max: 0x00005000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000100, Load base: 0x080032c0, Size: 0x00001b08, Max: 0x00005000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x080032c0   0x0000000c   Data   RW            5    .data               main.o
-    0x2000000c   0x080032cc   0x00000004   Data   RW          551    .data               boot.o
-    0x20000010        -       0x00000434   Zero   RW            4    .bss                main.o
-    0x20000444        -       0x00001060   Zero   RW          244    .bss                ustart.o
-    0x200014a4        -       0x00000060   Zero   RW         2049    .bss                c_w.l(libspace.o)
-    0x20001504   0x080032d0   0x00000004   PAD
-    0x20001508        -       0x00000200   Zero   RW          155    HEAP                startup_gd32f10x_md.o
-    0x20001708        -       0x00000400   Zero   RW          154    STACK               startup_gd32f10x_md.o
+    0x20000100   0x080032c0   0x0000000c   Data   RW            5    .data               main.o
+    0x2000010c   0x080032cc   0x00000004   Data   RW          551    .data               boot.o
+    0x20000110        -       0x00000434   Zero   RW            4    .bss                main.o
+    0x20000544        -       0x00001060   Zero   RW          244    .bss                ustart.o
+    0x200015a4        -       0x00000060   Zero   RW         2049    .bss                c_w.l(libspace.o)
+    0x20001604   0x080032d0   0x00000004   PAD
+    0x20001608        -       0x00000200   Zero   RW          155    HEAP                startup_gd32f10x_md.o
+    0x20001808        -       0x00000400   Zero   RW          154    STACK               startup_gd32f10x_md.o
 
 
 ==============================================================================
